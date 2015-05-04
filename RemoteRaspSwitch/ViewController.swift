@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
+    //test
     
     var server = Connection()
     var settings = ViewControllerSettings()
