@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD22E28D1AD8162E004EF6FF /* sendToServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD22E28C1AD8162E004EF6FF /* sendToServer.swift */; };
+		BD3BFF9D1AE6481800A671C7 /* ViewControllerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3BFF9C1AE6481800A671C7 /* ViewControllerSettings.swift */; };
+		BD62F3C01ACC35DF00DB13B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD62F3BF1ACC35DF00DB13B9 /* AppDelegate.swift */; };
+		BD62F3C21ACC35DF00DB13B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD62F3C11ACC35DF00DB13B9 /* ViewController.swift */; };
+		BD62F3C51ACC35DF00DB13B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD62F3C31ACC35DF00DB13B9 /* Main.storyboard */; };
+		BD62F3C71ACC35DF00DB13B9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD62F3C61ACC35DF00DB13B9 /* Images.xcassets */; };
+		BD62F3CA1ACC35DF00DB13B9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD62F3C81ACC35DF00DB13B9 /* LaunchScreen.xib */; };
+		BD62F3D61ACC35E000DB13B9 /* RemoteRaspSwitchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD62F3D51ACC35E000DB13B9 /* RemoteRaspSwitchTests.swift */; };
+		BD62F3E01ACC364C00DB13B9 /* viewEnhet1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD62F3DF1ACC364C00DB13B9 /* viewEnhet1.swift */; };
+		BD62F3E21ACC3C1B00DB13B9 /* viewEnhet2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD62F3E11ACC3C1B00DB13B9 /* viewEnhet2.swift */; };
+		BDB027751AEA860800EAA7E1 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB027741AEA860800EAA7E1 /* Connection.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD62F3D01ACC35E000DB13B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD62F3B21ACC35DF00DB13B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD62F3B91ACC35DF00DB13B9;
+			remoteInfo = RemoteRaspSwitch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BD22E28C1AD8162E004EF6FF /* sendToServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sendToServer.swift; sourceTree = "<group>"; };
+		BD3BFF9C1AE6481800A671C7 /* ViewControllerSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerSettings.swift; sourceTree = "<group>"; };
+		BD62F3BA1ACC35DF00DB13B9 /* RemoteRaspSwitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteRaspSwitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD62F3BE1ACC35DF00DB13B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD62F3BF1ACC35DF00DB13B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BD62F3C11ACC35DF00DB13B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BD62F3C41ACC35DF00DB13B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD62F3C61ACC35DF00DB13B9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BD62F3C91ACC35DF00DB13B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BD62F3CF1ACC35E000DB13B9 /* RemoteRaspSwitchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteRaspSwitchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD62F3D41ACC35E000DB13B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD62F3D51ACC35E000DB13B9 /* RemoteRaspSwitchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRaspSwitchTests.swift; sourceTree = "<group>"; };
+		BD62F3DF1ACC364C00DB13B9 /* viewEnhet1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = viewEnhet1.swift; sourceTree = "<group>"; };
+		BD62F3E11ACC3C1B00DB13B9 /* viewEnhet2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = viewEnhet2.swift; sourceTree = "<group>"; };
+		BDB027741AEA860800EAA7E1 /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD62F3B71ACC35DF00DB13B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD62F3CC1ACC35E000DB13B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD62F3B11ACC35DF00DB13B9 = {
+			isa = PBXGroup;
+			children = (
+				BD62F3BC1ACC35DF00DB13B9 /* RemoteRaspSwitch */,
+				BD62F3D21ACC35E000DB13B9 /* RemoteRaspSwitchTests */,
+				BD62F3BB1ACC35DF00DB13B9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD62F3BB1ACC35DF00DB13B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD62F3BA1ACC35DF00DB13B9 /* RemoteRaspSwitch.app */,
+				BD62F3CF1ACC35E000DB13B9 /* RemoteRaspSwitchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD62F3BC1ACC35DF00DB13B9 /* RemoteRaspSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				BD62F3BF1ACC35DF00DB13B9 /* AppDelegate.swift */,
+				BD62F3C11ACC35DF00DB13B9 /* ViewController.swift */,
+				BD22E28C1AD8162E004EF6FF /* sendToServer.swift */,
+				BD62F3DF1ACC364C00DB13B9 /* viewEnhet1.swift */,
+				BD62F3C31ACC35DF00DB13B9 /* Main.storyboard */,
+				BD3BFF9C1AE6481800A671C7 /* ViewControllerSettings.swift */,
+				BD62F3E11ACC3C1B00DB13B9 /* viewEnhet2.swift */,
+				BD62F3C61ACC35DF00DB13B9 /* Images.xcassets */,
+				BD62F3C81ACC35DF00DB13B9 /* LaunchScreen.xib */,
+				BD62F3BD1ACC35DF00DB13B9 /* Supporting Files */,
+				BDB027741AEA860800EAA7E1 /* Connection.swift */,
+			);
+			path = RemoteRaspSwitch;
+			sourceTree = "<group>";
+		};
+		BD62F3BD1ACC35DF00DB13B9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD62F3BE1ACC35DF00DB13B9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BD62F3D21ACC35E000DB13B9 /* RemoteRaspSwitchTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD62F3D51ACC35E000DB13B9 /* RemoteRaspSwitchTests.swift */,
+				BD62F3D31ACC35E000DB13B9 /* Supporting Files */,
+			);
+			path = RemoteRaspSwitchTests;
+			sourceTree = "<group>";
+		};
+		BD62F3D31ACC35E000DB13B9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD62F3D41ACC35E000DB13B9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD62F3B91ACC35DF00DB13B9 /* RemoteRaspSwitch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD62F3D91ACC35E000DB13B9 /* Build configuration list for PBXNativeTarget "RemoteRaspSwitch" */;
+			buildPhases = (
+				BD62F3B61ACC35DF00DB13B9 /* Sources */,
+				BD62F3B71ACC35DF00DB13B9 /* Frameworks */,
+				BD62F3B81ACC35DF00DB13B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RemoteRaspSwitch;
+			productName = RemoteRaspSwitch;
+			productReference = BD62F3BA1ACC35DF00DB13B9 /* RemoteRaspSwitch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BD62F3CE1ACC35E000DB13B9 /* RemoteRaspSwitchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD62F3DC1ACC35E000DB13B9 /* Build configuration list for PBXNativeTarget "RemoteRaspSwitchTests" */;
+			buildPhases = (
+				BD62F3CB1ACC35E000DB13B9 /* Sources */,
+				BD62F3CC1ACC35E000DB13B9 /* Frameworks */,
+				BD62F3CD1ACC35E000DB13B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD62F3D11ACC35E000DB13B9 /* PBXTargetDependency */,
+			);
+			name = RemoteRaspSwitchTests;
+			productName = RemoteRaspSwitchTests;
+			productReference = BD62F3CF1ACC35E000DB13B9 /* RemoteRaspSwitchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD62F3B21ACC35DF00DB13B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = gneken;
+				TargetAttributes = {
+					BD62F3B91ACC35DF00DB13B9 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					BD62F3CE1ACC35E000DB13B9 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = BD62F3B91ACC35DF00DB13B9;
+					};
+				};
+			};
+			buildConfigurationList = BD62F3B51ACC35DF00DB13B9 /* Build configuration list for PBXProject "RemoteRaspSwitch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD62F3B11ACC35DF00DB13B9;
+			productRefGroup = BD62F3BB1ACC35DF00DB13B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD62F3B91ACC35DF00DB13B9 /* RemoteRaspSwitch */,
+				BD62F3CE1ACC35E000DB13B9 /* RemoteRaspSwitchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD62F3B81ACC35DF00DB13B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD62F3C51ACC35DF00DB13B9 /* Main.storyboard in Resources */,
+				BD62F3CA1ACC35DF00DB13B9 /* LaunchScreen.xib in Resources */,
+				BD62F3C71ACC35DF00DB13B9 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD62F3CD1ACC35E000DB13B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD62F3B61ACC35DF00DB13B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD62F3E21ACC3C1B00DB13B9 /* viewEnhet2.swift in Sources */,
+				BD22E28D1AD8162E004EF6FF /* sendToServer.swift in Sources */,
+				BD62F3C21ACC35DF00DB13B9 /* ViewController.swift in Sources */,
+				BD62F3E01ACC364C00DB13B9 /* viewEnhet1.swift in Sources */,
+				BD62F3C01ACC35DF00DB13B9 /* AppDelegate.swift in Sources */,
+				BD3BFF9D1AE6481800A671C7 /* ViewControllerSettings.swift in Sources */,
+				BDB027751AEA860800EAA7E1 /* Connection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD62F3CB1ACC35E000DB13B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD62F3D61ACC35E000DB13B9 /* RemoteRaspSwitchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD62F3D11ACC35E000DB13B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD62F3B91ACC35DF00DB13B9 /* RemoteRaspSwitch */;
+			targetProxy = BD62F3D01ACC35E000DB13B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BD62F3C31ACC35DF00DB13B9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD62F3C41ACC35DF00DB13B9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BD62F3C81ACC35DF00DB13B9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD62F3C91ACC35DF00DB13B9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD62F3D71ACC35E000DB13B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD62F3D81ACC35E000DB13B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD62F3DA1ACC35E000DB13B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RemoteRaspSwitch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BD62F3DB1ACC35E000DB13B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RemoteRaspSwitch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BD62F3DD1ACC35E000DB13B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RemoteRaspSwitchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RemoteRaspSwitch.app/RemoteRaspSwitch";
+			};
+			name = Debug;
+		};
+		BD62F3DE1ACC35E000DB13B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RemoteRaspSwitchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RemoteRaspSwitch.app/RemoteRaspSwitch";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD62F3B51ACC35DF00DB13B9 /* Build configuration list for PBXProject "RemoteRaspSwitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD62F3D71ACC35E000DB13B9 /* Debug */,
+				BD62F3D81ACC35E000DB13B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD62F3D91ACC35E000DB13B9 /* Build configuration list for PBXNativeTarget "RemoteRaspSwitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD62F3DA1ACC35E000DB13B9 /* Debug */,
+				BD62F3DB1ACC35E000DB13B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD62F3DC1ACC35E000DB13B9 /* Build configuration list for PBXNativeTarget "RemoteRaspSwitchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD62F3DD1ACC35E000DB13B9 /* Debug */,
+				BD62F3DE1ACC35E000DB13B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD62F3B21ACC35DF00DB13B9 /* Project object */;
+}
