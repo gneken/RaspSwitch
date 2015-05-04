@@ -260,7 +260,7 @@
                                     <action selector="selectTime:" destination="Var-e4-rKq" eventType="valueChanged" id="rI1-jr-rOH"/>
                                 </connections>
                             </datePicker>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X2J-BG-HsV">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X2J-BG-HsV">
                                 <rect key="frame" x="180" y="383" width="240" height="128"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1t8-87-kh0">
