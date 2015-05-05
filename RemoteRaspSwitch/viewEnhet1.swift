@@ -18,6 +18,8 @@ class viewEnhet1: UIViewController {
         // Do any additional setup after loading the view.
         
         server.initiate()
+        displayTimers.text = " "
+        var timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("updateTimers"), userInfo: nil, repeats: false)
     }
     
     override func didReceiveMemoryWarning() {
@@ -48,7 +50,6 @@ class viewEnhet1: UIViewController {
         timeFormatter.timeStyle = .ShortStyle
         timeFormatter.dateFormat = "HH:mm"
         theTime = timeFormatter.stringFromDate(sender.date)
-        displayTimers.text = timeFormatter.stringFromDate(sender.date)
     }
     
     @IBAction func refreshTimers(sender: UIButton) {

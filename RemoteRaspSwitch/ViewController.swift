@@ -71,33 +71,38 @@ class ViewController: UIViewController {
         
         var array = server.getState()
         
-        if (array[0] == "LOW"){
-            switchOne.setOn(false, animated: true)
-        } else if (array[0] == "HIGH") {
-            switchOne.setOn(true, animated: true)
-        } else {println("Fail")
-            return}
-        
-        if (array[1] == "LOW"){
-            switchTwo.setOn(false, animated: true)
-        } else if (array[1] == "HIGH") {
-            switchTwo.setOn(true, animated: true)
-        } else {println("Fail")
-            return}
-        
-        if (array[2] == "LOW"){
-            switchThree.setOn(false, animated: true)
-        } else if (array[2] == "HIGH") {
-            switchThree.setOn(true, animated: true)
-        } else {println("Fail")
-            return}
-        
-        if (array[3] == "LOW"){
-            switchFour.setOn(false, animated: true)
-        } else if (array[3] == "HIGH") {
-            switchFour.setOn(true, animated: true)
-        } else {println("Fail")
-            return}
+        if array.isEmpty{
+            return
+        }else{
+            
+            if (array[0] == "LOW"){
+                switchOne.setOn(false, animated: true)
+            } else if (array[0] == "HIGH") {
+                switchOne.setOn(true, animated: true)
+            } else {println("Fail")
+                return}
+            
+            if (array[1] == "LOW"){
+                switchTwo.setOn(false, animated: true)
+            } else if (array[1] == "HIGH") {
+                switchTwo.setOn(true, animated: true)
+            } else {println("Fail")
+                return}
+            
+            if (array[2] == "LOW"){
+                switchThree.setOn(false, animated: true)
+            } else if (array[2] == "HIGH") {
+                switchThree.setOn(true, animated: true)
+            } else {println("Fail")
+                return}
+            
+            if (array[3] == "LOW"){
+                switchFour.setOn(false, animated: true)
+            } else if (array[3] == "HIGH") {
+                switchFour.setOn(true, animated: true)
+            } else {println("Fail")
+                return}
+        }
     }
 }
 

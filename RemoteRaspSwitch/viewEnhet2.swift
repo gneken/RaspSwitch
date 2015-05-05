@@ -18,6 +18,7 @@ class viewEnhet2: UIViewController {
         super.viewDidLoad()
         server.initiate()
         displayTimers.text = " "
+        var timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("updateTimers"), userInfo: nil, repeats: false)
         // Do any additional setup after loading the view.
     }
     
@@ -35,7 +36,6 @@ class viewEnhet2: UIViewController {
         timeFormatter.timeStyle = .ShortStyle
         timeFormatter.dateFormat = "HH:mm"
         theTime = timeFormatter.stringFromDate(sender.date)
-        displayTimers.text = timeFormatter.stringFromDate(sender.date)
     }
     
     @IBAction func turnOnButton(sender: UIButton) {
@@ -53,7 +53,7 @@ class viewEnhet2: UIViewController {
         }
     }
     
-
+    
     @IBAction func refreshTimers(sender: UIButton) {
         text = ""
         server.initiate()
@@ -66,12 +66,12 @@ class viewEnhet2: UIViewController {
     var text = String()
     func updateTimers(){
         let array = server.getState()
-//        for element in array{
-//        println("\(element) ")
-//            if element == "unit2"{
-//                displayTime.text = element
-//            }
-//        }
+        //        for element in array{
+        //        println("\(element) ")
+        //            if element == "unit2"{
+        //                displayTime.text = element
+        //            }
+        //        }
         
         for index in 0..<array.count{
             if array[index] == "unit2"{
@@ -80,7 +80,7 @@ class viewEnhet2: UIViewController {
         }
         displayTimers.text = text
         
-
+        
     }
     
 }
