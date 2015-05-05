@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3617A657-6838-41A3-AF00-E200737EC9D7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RemoteRaspSwitch</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E85BA85D7A84E0AA8D2BF4B8AFDBD48B3E08E58E</key>
+		<string>https://github.com/gneken/RaspSwitch.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RemoteRaspSwitch.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E85BA85D7A84E0AA8D2BF4B8AFDBD48B3E08E58E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/gneken/RaspSwitch.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E85BA85D7A84E0AA8D2BF4B8AFDBD48B3E08E58E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E85BA85D7A84E0AA8D2BF4B8AFDBD48B3E08E58E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RemoteRaspSwitch</string>
+		</dict>
+	</array>
+</dict>
+</plist>

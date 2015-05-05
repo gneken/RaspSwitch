@@ -94,7 +94,6 @@ class Connection: NSObject, NSStreamDelegate {
                     if(len > 0){
                         var output = NSString(bytes: &buffer, length: buffer.count, encoding: NSUTF8StringEncoding)
                         array = output!.componentsSeparatedByString(" ")
-                        //println((array[0] as! String) + "test")
                     }
                 }
             default:
@@ -112,8 +111,7 @@ class Connection: NSObject, NSStreamDelegate {
                 let data = message!.dataUsingEncoding(NSUTF8StringEncoding)!
                 outputStream!.write(UnsafePointer<UInt8>(data.bytes), maxLength: data.length)
                 outputStream!.close()
-                //message = nil
-                
+                message = nil
             default:
                 break
             }
