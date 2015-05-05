@@ -11,7 +11,6 @@ import UIKit
 
 
 class Connection: NSObject, NSStreamDelegate {
-    var server = sendToServer()
     let prefs = NSUserDefaults.standardUserDefaults()
     var port = 9090
     var inputStream: NSInputStream?
@@ -101,6 +100,7 @@ class Connection: NSObject, NSStreamDelegate {
                     if(len > 0){
                         var output = NSString(bytes: &buffer, length: buffer.count, encoding: NSUTF8StringEncoding)
                         array = output!.componentsSeparatedByString(" ")
+                        
                         //println((array[0] as! String) + "test")
                     }
                 }

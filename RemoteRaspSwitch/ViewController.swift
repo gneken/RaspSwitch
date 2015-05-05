@@ -10,15 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    //test
-    
     var server = Connection()
     var settings = ViewControllerSettings()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        server.initiate()
         switchOne.tintColor = UIColor.redColor()
         switchTwo.tintColor = UIColor.redColor()
         switchThree.tintColor = UIColor.redColor()
@@ -61,7 +58,7 @@ class ViewController: UIViewController {
     
     @IBAction func refreshSwitches(sender: UIBarButtonItem) {
         server.initiate()
-        updateSwitch()
+        var timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("updateSwitch"), userInfo: nil, repeats: false)
         refreshText.title = "Refreshed"
     }
     
@@ -72,8 +69,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var switchFour: UISwitch!
     
     func updateSwitch(){
-       let array = server.getState()
         
+        let array = server.getState()
         for index in array {
         println("\(index) ")
         }

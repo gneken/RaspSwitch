@@ -57,7 +57,8 @@ class viewEnhet2: UIViewController {
     @IBAction func refreshTimers(sender: UIButton) {
         text = ""
         server.initiate()
-        updateTimers()
+        var timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("updateTimers"), userInfo: nil, repeats: false)
+        
     }
     
     @IBOutlet weak var displayTimers: UITextView!

@@ -54,14 +54,14 @@ class viewEnhet1: UIViewController {
     @IBAction func refreshTimers(sender: UIButton) {
         text = ""
         server.initiate()
-        updateTimers()
+        var timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("updateTimers"), userInfo: nil, repeats: false)
     }
     
     var text = String()
     func updateTimers(){
         let array = server.getState()
         for index in 0..<array.count{
-            if array[index] == "unit2"{
+            if array[index] == "unit1"{
                 text += array[index+1] + " " + array[index+2] + "\n"
             }
         }
