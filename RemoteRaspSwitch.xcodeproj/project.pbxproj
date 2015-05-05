@@ -16,6 +16,8 @@
 		BD62F3D61ACC35E000DB13B9 /* RemoteRaspSwitchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD62F3D51ACC35E000DB13B9 /* RemoteRaspSwitchTests.swift */; };
 		BD62F3E01ACC364C00DB13B9 /* viewEnhet1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD62F3DF1ACC364C00DB13B9 /* viewEnhet1.swift */; };
 		BD62F3E21ACC3C1B00DB13B9 /* viewEnhet2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD62F3E11ACC3C1B00DB13B9 /* viewEnhet2.swift */; };
+		BD9A835C1AF9342A00F74F8F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9A835B1AF9342A00F74F8F /* TableViewController.swift */; };
+		BD9A835E1AF9345800F74F8F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9A835D1AF9345800F74F8F /* TableViewCell.swift */; };
 		BDB027751AEA860800EAA7E1 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB027741AEA860800EAA7E1 /* Connection.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +45,8 @@
 		BD62F3D51ACC35E000DB13B9 /* RemoteRaspSwitchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRaspSwitchTests.swift; sourceTree = "<group>"; };
 		BD62F3DF1ACC364C00DB13B9 /* viewEnhet1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = viewEnhet1.swift; sourceTree = "<group>"; };
 		BD62F3E11ACC3C1B00DB13B9 /* viewEnhet2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = viewEnhet2.swift; sourceTree = "<group>"; };
+		BD9A835B1AF9342A00F74F8F /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		BD9A835D1AF9345800F74F8F /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		BDB027741AEA860800EAA7E1 /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +99,8 @@
 				BD62F3C81ACC35DF00DB13B9 /* LaunchScreen.xib */,
 				BD62F3BD1ACC35DF00DB13B9 /* Supporting Files */,
 				BDB027741AEA860800EAA7E1 /* Connection.swift */,
+				BD9A835B1AF9342A00F74F8F /* TableViewController.swift */,
+				BD9A835D1AF9345800F74F8F /* TableViewCell.swift */,
 			);
 			path = RemoteRaspSwitch;
 			sourceTree = "<group>";
@@ -225,6 +231,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD62F3E21ACC3C1B00DB13B9 /* viewEnhet2.swift in Sources */,
+				BD9A835E1AF9345800F74F8F /* TableViewCell.swift in Sources */,
+				BD9A835C1AF9342A00F74F8F /* TableViewController.swift in Sources */,
 				BD62F3C21ACC35DF00DB13B9 /* ViewController.swift in Sources */,
 				BD62F3E01ACC364C00DB13B9 /* viewEnhet1.swift in Sources */,
 				BD62F3C01ACC35DF00DB13B9 /* AppDelegate.swift in Sources */,
