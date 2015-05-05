@@ -10,15 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    //test
-    
     var server = Connection()
     var settings = ViewControllerSettings()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        server.initiate()
+        //server.initiate()
         switchOne.tintColor = UIColor.redColor()
         switchTwo.tintColor = UIColor.redColor()
         switchThree.tintColor = UIColor.redColor()
@@ -49,9 +47,6 @@ class ViewController: UIViewController {
         
     }
     
-
-    
-    
     @IBAction func toggleSwitch(sender: UISwitch) {
         server.toggle(sender, nummer: sender.restorationIdentifier!)
     }
@@ -72,39 +67,40 @@ class ViewController: UIViewController {
     @IBOutlet weak var switchFour: UISwitch!
     
     func updateSwitch(){
-       let array = server.getState()
+        var array = server.getState()
         
-        for index in array {
-        println("\(index) ")
+        if !array.isEmpty {
+            
+            if (array[0] == "LOW"){
+                switchOne.setOn(false, animated: true)
+            } else if (array[0] == "HIGH") {
+                switchOne.setOn(true, animated: true)
+            } else {println("Fail")
+                return}
+            
+            if (array[1] == "LOW"){
+                switchTwo.setOn(false, animated: true)
+            } else if (array[1] == "HIGH") {
+                switchTwo.setOn(true, animated: true)
+            } else {println("Fail")
+                return}
+            
+            if (array[2] == "LOW"){
+                switchThree.setOn(false, animated: true)
+            } else if (array[2] == "HIGH") {
+                switchThree.setOn(true, animated: true)
+            } else {println("Fail")
+                return}
+            
+            if (array[3] == "LOW"){
+                switchFour.setOn(false, animated: true)
+            } else if (array[3] == "HIGH") {
+                switchFour.setOn(true, animated: true)
+            } else {println("Fail")
+                return}
+        } else {
+            updateSwitch()
         }
-        
-        if (array[0] == "LOW"){
-            switchOne.setOn(false, animated: true)
-        } else if (array[0] == "HIGH") {
-            switchOne.setOn(true, animated: true)
-        } else {println("Fail")
-            return}
-        
-        if (array[1] == "LOW"){
-            switchTwo.setOn(false, animated: true)
-        } else if (array[1] == "HIGH") {
-            switchTwo.setOn(true, animated: true)
-        } else {println("Fail")
-            return}
-        
-        if (array[2] == "LOW"){
-            switchThree.setOn(false, animated: true)
-        } else if (array[2] == "HIGH") {
-            switchThree.setOn(true, animated: true)
-        } else {println("Fail")
-            return}
-        
-        if (array[3] == "LOW"){
-            switchFour.setOn(false, animated: true)
-        } else if (array[3] == "HIGH") {
-            switchFour.setOn(true, animated: true)
-        } else {println("Fail")
-            return}
     }
 }
 

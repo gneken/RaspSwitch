@@ -66,7 +66,5 @@ class viewEnhet1: UIViewController {
             }
         }
         displayTimers.text = text
-        
     }
-    
 }

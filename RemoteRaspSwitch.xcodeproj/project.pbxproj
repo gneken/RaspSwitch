@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BD22E28D1AD8162E004EF6FF /* sendToServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD22E28C1AD8162E004EF6FF /* sendToServer.swift */; };
 		BD3BFF9D1AE6481800A671C7 /* ViewControllerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3BFF9C1AE6481800A671C7 /* ViewControllerSettings.swift */; };
 		BD62F3C01ACC35DF00DB13B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD62F3BF1ACC35DF00DB13B9 /* AppDelegate.swift */; };
 		BD62F3C21ACC35DF00DB13B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD62F3C11ACC35DF00DB13B9 /* ViewController.swift */; };
@@ -31,7 +30,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BD22E28C1AD8162E004EF6FF /* sendToServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sendToServer.swift; sourceTree = "<group>"; };
 		BD3BFF9C1AE6481800A671C7 /* ViewControllerSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerSettings.swift; sourceTree = "<group>"; };
 		BD62F3BA1ACC35DF00DB13B9 /* RemoteRaspSwitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteRaspSwitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD62F3BE1ACC35DF00DB13B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -89,7 +87,6 @@
 			children = (
 				BD62F3BF1ACC35DF00DB13B9 /* AppDelegate.swift */,
 				BD62F3C11ACC35DF00DB13B9 /* ViewController.swift */,
-				BD22E28C1AD8162E004EF6FF /* sendToServer.swift */,
 				BD62F3DF1ACC364C00DB13B9 /* viewEnhet1.swift */,
 				BD62F3C31ACC35DF00DB13B9 /* Main.storyboard */,
 				BD3BFF9C1AE6481800A671C7 /* ViewControllerSettings.swift */,
@@ -228,7 +225,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD62F3E21ACC3C1B00DB13B9 /* viewEnhet2.swift in Sources */,
-				BD22E28D1AD8162E004EF6FF /* sendToServer.swift in Sources */,
 				BD62F3C21ACC35DF00DB13B9 /* ViewController.swift in Sources */,
 				BD62F3E01ACC364C00DB13B9 /* viewEnhet1.swift in Sources */,
 				BD62F3C01ACC35DF00DB13B9 /* AppDelegate.swift in Sources */,

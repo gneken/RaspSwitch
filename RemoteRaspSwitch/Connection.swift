@@ -11,7 +11,6 @@ import UIKit
 
 
 class Connection: NSObject, NSStreamDelegate {
-    var server = sendToServer()
     let prefs = NSUserDefaults.standardUserDefaults()
     var port = 9090
     var inputStream: NSInputStream?
@@ -33,13 +32,10 @@ class Connection: NSObject, NSStreamDelegate {
     }
     
     func getState() -> [String] {
-        
         return array as! [String]
     }
     
-    
     func connect(host: String, port: Int) {
-        
 
         self.port = port
         
@@ -57,8 +53,6 @@ class Connection: NSObject, NSStreamDelegate {
             outputStream!.open()
         }
     }
-    
-    
     
     func timerToServer(sender: UIButton, time: String, nummer: String){
         if(sender.currentTitle == "Turn On"){
@@ -84,7 +78,6 @@ class Connection: NSObject, NSStreamDelegate {
         message = "INITIATE\n"
         connect(getIP(), port: port)
     }
-    
     
     func stream(aStream: NSStream, handleEvent eventCode: NSStreamEvent) {
         
