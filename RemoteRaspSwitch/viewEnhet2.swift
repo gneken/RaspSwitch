@@ -18,7 +18,7 @@ class viewEnhet2: UIViewController {
         super.viewDidLoad()
         server.initiate()
         displayTimers.text = " "
-        var timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("updateTimers"), userInfo: nil, repeats: false)
+        var timer = NSTimer.scheduledTimerWithTimeInterval(0.3, target: self, selector: Selector("updateTimers"), userInfo: nil, repeats: false)
         // Do any additional setup after loading the view.
     }
     
@@ -26,8 +26,6 @@ class viewEnhet2: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @IBOutlet weak var buttonOn: UIButton!
     
     
     @IBAction func selectTime(sender: UIDatePicker) {
@@ -57,22 +55,16 @@ class viewEnhet2: UIViewController {
     @IBAction func refreshTimers(sender: UIButton) {
         text = ""
         server.initiate()
-        var timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("updateTimers"), userInfo: nil, repeats: false)
+        var timer = NSTimer.scheduledTimerWithTimeInterval(0.3, target: self, selector: Selector("updateTimers"), userInfo: nil, repeats: false)
         
     }
     
     @IBOutlet weak var displayTimers: UITextView!
+
     
     var text = String()
     func updateTimers(){
         let array = server.getState()
-        //        for element in array{
-        //        println("\(element) ")
-        //            if element == "unit2"{
-        //                displayTime.text = element
-        //            }
-        //        }
-        
         for index in 0..<array.count{
             if array[index] == "unit2"{
                 text += array[index+1] + " " + array[index+2] + "\n"

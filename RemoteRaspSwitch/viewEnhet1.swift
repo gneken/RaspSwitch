@@ -19,7 +19,7 @@ class viewEnhet1: UIViewController {
         
         server.initiate()
         displayTimers.text = " "
-        var timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("updateTimers"), userInfo: nil, repeats: false)
+        var timer = NSTimer.scheduledTimerWithTimeInterval(0.3, target: self, selector: Selector("updateTimers"), userInfo: nil, repeats: false)
     }
     
     override func didReceiveMemoryWarning() {
@@ -42,8 +42,9 @@ class viewEnhet1: UIViewController {
             server.timerToServer(sender, time: theTime, nummer: "1")
         }
     }
-    
+
     @IBOutlet weak var displayTimers: UITextView!
+    
     @IBAction func selectTime(sender: UIDatePicker) {
         var timeFormatter = NSDateFormatter()
         timeFormatter.dateStyle = .NoStyle
@@ -55,13 +56,15 @@ class viewEnhet1: UIViewController {
     @IBAction func refreshTimers(sender: UIButton) {
         text = ""
         server.initiate()
-        var timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("updateTimers"), userInfo: nil, repeats: false)
+        var timer = NSTimer.scheduledTimerWithTimeInterval(0.3, target: self, selector: Selector("updateTimers"), userInfo: nil, repeats: false)
     }
     
     var text = String()
     func updateTimers(){
+        
         let array = server.getState()
         for index in 0..<array.count{
+            dump(array)
             if array[index] == "unit1"{
                 text += array[index+1] + " " + array[index+2] + "\n"
             }
