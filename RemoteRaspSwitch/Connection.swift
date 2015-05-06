@@ -36,7 +36,7 @@ class Connection: NSObject, NSStreamDelegate {
     }
     
     func connect(host: String, port: Int) {
-
+        
         self.port = port
         
         NSStream.getStreamsToHostWithName(host, port: port, inputStream: &inputStream, outputStream: &outputStream)
@@ -60,6 +60,12 @@ class Connection: NSObject, NSStreamDelegate {
         } else {
             message = "TIMER\n" + "unit" + nummer + " OFF" + "\n"  + time + "\n"
         }
+        connect(prefs.stringForKey("iPaddr")!, port: port)
+    }
+    
+    func removeTimer(text: String){
+        println("test" + text)
+        message = "REMOVE\n" + text
         connect(prefs.stringForKey("iPaddr")!, port: port)
     }
     

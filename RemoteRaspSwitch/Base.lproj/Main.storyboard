@@ -311,7 +311,7 @@
             </objects>
             <point key="canvasLocation" x="1985" y="-338"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Timers-->
         <scene sceneID="mn3-EA-XYg">
             <objects>
                 <tableViewController id="mA0-Su-t9I" customClass="TableViewController" customModule="RemoteRaspSwitch" customModuleProvider="target" sceneMemberID="viewController">
@@ -343,6 +343,13 @@
                             <outlet property="delegate" destination="mA0-Su-t9I" id="Jkh-bt-F2h"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Timers" id="Dsj-fy-wFp">
+                        <barButtonItem key="rightBarButtonItem" title="Reload" id="XOn-Hl-8nW">
+                            <connections>
+                                <action selector="reloadView:" destination="mA0-Su-t9I" id="yYi-ei-ofB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7UF-qH-2Cn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -60,6 +60,10 @@ class viewEnhet1: UIViewController {
     }
     
     var text = String()
+    var newArray = [String()]
+    func getArray()->[String]{
+    return newArray as [String]
+    }
     func updateTimers(){
         
         let array = server.getState()
@@ -67,6 +71,7 @@ class viewEnhet1: UIViewController {
             dump(array)
             if array[index] == "unit1"{
                 text += array[index+1] + " " + array[index+2] + "\n"
+                newArray.append(array[index+1] + " " + array[index+2] + "\n")
             }
         }
         displayTimers.text = text
