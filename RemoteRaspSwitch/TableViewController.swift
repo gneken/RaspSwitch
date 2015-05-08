@@ -12,6 +12,7 @@ class TableViewController: UITableViewController {
     
     var server = Connection()
     var array = [String()]
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()

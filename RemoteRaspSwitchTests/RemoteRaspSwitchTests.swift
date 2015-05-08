@@ -26,6 +26,16 @@ class RemoteRaspSwitchTests: XCTestCase {
         XCTAssert(true, "Pass")
     }
     
+    func testMultiplyingTwoNegativeNumbersYieldsAPositiveValue() {
+        let x = -6
+        let y = -4
+        let product = x * y
+        
+        XCTAssertTrue(product > 0, "Multiplying two negative numbers should yield a positive number. Product: \(product)")
+    }
+    
+    
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measureBlock() {

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BD3BFF9D1AE6481800A671C7 /* ViewControllerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3BFF9C1AE6481800A671C7 /* ViewControllerSettings.swift */; };
-		BD4289AD1AFA1B5D0054EF39 /* GetTimerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4289AC1AFA1B5D0054EF39 /* GetTimerState.swift */; };
 		BD62F3C01ACC35DF00DB13B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD62F3BF1ACC35DF00DB13B9 /* AppDelegate.swift */; };
 		BD62F3C21ACC35DF00DB13B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD62F3C11ACC35DF00DB13B9 /* ViewController.swift */; };
 		BD62F3C51ACC35DF00DB13B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD62F3C31ACC35DF00DB13B9 /* Main.storyboard */; };
@@ -34,7 +33,6 @@
 
 /* Begin PBXFileReference section */
 		BD3BFF9C1AE6481800A671C7 /* ViewControllerSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerSettings.swift; sourceTree = "<group>"; };
-		BD4289AC1AFA1B5D0054EF39 /* GetTimerState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTimerState.swift; sourceTree = "<group>"; };
 		BD62F3BA1ACC35DF00DB13B9 /* RemoteRaspSwitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteRaspSwitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD62F3BE1ACC35DF00DB13B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD62F3BF1ACC35DF00DB13B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,7 +101,6 @@
 				BDB027741AEA860800EAA7E1 /* Connection.swift */,
 				BD9A835B1AF9342A00F74F8F /* TableViewController.swift */,
 				BD9A835D1AF9345800F74F8F /* TableViewCell.swift */,
-				BD4289AC1AFA1B5D0054EF39 /* GetTimerState.swift */,
 			);
 			path = RemoteRaspSwitch;
 			sourceTree = "<group>";
@@ -235,7 +232,6 @@
 			files = (
 				BD62F3E21ACC3C1B00DB13B9 /* viewEnhet2.swift in Sources */,
 				BD9A835E1AF9345800F74F8F /* TableViewCell.swift in Sources */,
-				BD4289AD1AFA1B5D0054EF39 /* GetTimerState.swift in Sources */,
 				BD9A835C1AF9342A00F74F8F /* TableViewController.swift in Sources */,
 				BD62F3C21ACC35DF00DB13B9 /* ViewController.swift in Sources */,
 				BD62F3E01ACC364C00DB13B9 /* viewEnhet1.swift in Sources */,
